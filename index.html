@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="currency.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading" align="center">Currency Converter</h1>
+        <hr id="hori">
+
+        <div class="mdiv">
+
+            <form>
+                <div class="inputField">
+                    <label style="font-size: 20px; color: whitesmoke;">Amount to Convert </label>
+                    <br>
+                    <input type="text" class="form-control searchBox" placeholder="00" id="amount"
+                        style="width: 85%;height: 35px;margin-top: 10px;">
+                </div>
+
+                <div class="part">
+                    <div style="width: 40%;margin-left: 25px;" >
+                        <label>From</label>
+                        <select id="from-currency" class="amount">
+                            
+                        </select>
+                    </div>
+
+                    <div style="margin-left: 50px; width: 40%;">
+                        <label>To</label>
+                        <select id="to-currency" class="amount">
+                           
+                        </select>
+                    </div>
+                </div>
+
+                <div class="btndiv">
+                    <button class="btn" type="button" onclick="convertCurrency()"> Convert </button>
+                    <button class="btn" type="button" onclick="clearVal()"> Reset</button>
+                </div>
+            </form>
+            <div class="opt">
+            <h1 id="op" style="font-size:25px"></h1>
+            </div>
+        </div>
+    </div>
+
+   <script src="currency.js"></script>
+</body>
+
+</html>
